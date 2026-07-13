@@ -1869,3 +1869,31 @@ header.scrolled{
     opacity:1;
 
 }
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-card{
+
+    animation:floatCard 5s ease-in-out infinite;
+
+}

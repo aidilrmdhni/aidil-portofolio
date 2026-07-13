@@ -46,22 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
        SCROLL TOP
     ========================================== */
 
-    const scrollTop = document.getElementById("scrollTop");
+const scrollTop = document.getElementById("scrollTop");
+
+if (scrollTop) {
 
     window.addEventListener("scroll", () => {
 
         if (window.scrollY > 500) {
-
             scrollTop.style.display = "flex";
-
-            scrollTop.style.alignItems = "center";
-
-            scrollTop.style.justifyContent = "center";
-
         } else {
-
             scrollTop.style.display = "none";
-
         }
 
     });
@@ -69,15 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTop.addEventListener("click", () => {
 
         window.scrollTo({
-
-            top:0,
-
-            behavior:"smooth"
-
+            top: 0,
+            behavior: "smooth"
         });
 
     });
 
+}
+   
     /* ==========================================
        ACTIVE MENU
     ========================================== */

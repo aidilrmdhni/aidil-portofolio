@@ -1515,3 +1515,59 @@ header.scrolled{
     width:100%;
 
 }
+
+/* ================= ICON ================= */
+
+.skill-icon{
+
+    width:72px;
+    height:72px;
+
+    margin:auto auto 22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    background:rgba(59,130,246,.08);
+
+    border:1px solid rgba(59,130,246,.18);
+
+}
+
+.skill-icon img{
+
+    width:38px;
+    height:38px;
+
+}
+
+.contact-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto auto 18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.contact-icon img{
+
+    width:34px;
+
+}

@@ -281,3 +281,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* ==========================================
+   MOUSE SPOTLIGHT
+========================================== */
+
+const spotlight = document.querySelector(".mouse-glow");
+
+document.addEventListener("mousemove",(e)=>{
+
+    spotlight.style.left = e.clientX + "px";
+
+    spotlight.style.top = e.clientY + "px";
+
+});

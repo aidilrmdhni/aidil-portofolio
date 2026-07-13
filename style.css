@@ -343,6 +343,50 @@ ul{
 
 }
 
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:-30%;
+
+    background:
+
+    radial-gradient(circle at 20% 20%,
+    rgba(59,130,246,.12),
+    transparent 40%),
+
+    radial-gradient(circle at 80% 60%,
+    rgba(6,182,212,.10),
+    transparent 45%),
+
+    radial-gradient(circle at 50% 90%,
+    rgba(168,85,247,.08),
+    transparent 40%);
+
+    z-index:-5;
+
+    animation:aurora 18s linear infinite alternate;
+
+}
+
+@keyframes aurora{
+
+    from{
+
+        transform:translate(-40px,-30px);
+
+    }
+
+    to{
+
+        transform:translate(40px,30px);
+
+    }
+
+}
+
 /* =========================
    LOADER
 ========================= */
@@ -1513,5 +1557,221 @@ header.scrolled{
 .nav-menu a.active::after{
 
     width:100%;
+
+}
+
+/* ================= ICON ================= */
+
+.skill-icon{
+
+    width:72px;
+    height:72px;
+
+    margin:auto auto 22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    background:rgba(59,130,246,.08);
+
+    border:1px solid rgba(59,130,246,.18);
+
+}
+
+.skill-icon img{
+
+    width:38px;
+    height:38px;
+
+}
+
+.contact-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto auto 18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.contact-icon img{
+
+    width:34px;
+
+}
+
+.experience-card,
+.project-card,
+.skill-card,
+.contact-card,
+.highlight-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.experience-card::before,
+.project-card::before,
+.skill-card::before,
+.contact-card::before,
+.highlight-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(59,130,246,.15),
+    transparent);
+
+    top:-180px;
+
+    right:-180px;
+
+    transition:.5s;
+
+}
+
+.experience-card:hover::before,
+.project-card:hover::before,
+.skill-card:hover::before,
+.contact-card:hover::before,
+.highlight-card:hover::before{
+
+    transform:scale(1.3);
+
+}
+
+.experience-wrapper{
+
+    position:relative;
+
+}
+
+.experience-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:34px;
+
+    top:20px;
+
+    bottom:20px;
+
+    width:2px;
+
+    background:
+
+    linear-gradient(
+
+        var(--primary),
+
+        transparent
+
+    );
+
+}
+
+.hero h1{
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        white,
+
+        #8ec5ff,
+
+        #4fd1ff
+
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+::selection{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:30px;
+
+}
+
+.profile-card{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
 
 }

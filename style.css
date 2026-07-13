@@ -1665,3 +1665,35 @@ header.scrolled{
     transform:scale(1.3);
 
 }
+
+.experience-wrapper{
+
+    position:relative;
+
+}
+
+.experience-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:34px;
+
+    top:20px;
+
+    bottom:20px;
+
+    width:2px;
+
+    background:
+
+    linear-gradient(
+
+        var(--primary),
+
+        transparent
+
+    );
+
+}

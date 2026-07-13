@@ -1467,3 +1467,51 @@ footer p{
 }
 
 }
+
+/* ==========================================
+ANIMATION
+========================================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+header.scrolled{
+
+    background:rgba(3,7,18,.92);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.25);
+
+}
+
+.hero h2{
+
+    transition:.35s;
+
+}
+
+.nav-menu a.active{
+
+    color:white;
+
+}
+
+.nav-menu a.active::after{
+
+    width:100%;
+
+}

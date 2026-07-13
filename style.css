@@ -1811,3 +1811,61 @@ header.scrolled{
     filter:blur(30px);
 
 }
+
+/* ======================================================
+   PREMIUM CARD
+====================================================== */
+
+.project-card,
+.skill-card,
+.contact-card,
+.experience-card,
+.highlight-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-card::after,
+.skill-card::after,
+.contact-card::after,
+.experience-card::after,
+.highlight-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    transition:.35s;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        transparent,
+
+        rgba(255,255,255,.04),
+
+        transparent
+
+    );
+
+}
+
+.project-card:hover::after,
+.skill-card:hover::after,
+.contact-card:hover::after,
+.experience-card:hover::after,
+.highlight-card:hover::after{
+
+    opacity:1;
+
+}

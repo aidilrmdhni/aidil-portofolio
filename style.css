@@ -1697,3 +1697,25 @@ header.scrolled{
     );
 
 }
+
+.hero h1{
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        white,
+
+        #8ec5ff,
+
+        #4fd1ff
+
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}

@@ -154,46 +154,37 @@ document.addEventListener("DOMContentLoaded", () => {
        HERO TYPING
     ========================================== */
 
-    const heroTitle = document.querySelector(".hero h2");
+const heroTitle = document.querySelector(".hero h2");
+
+if (heroTitle) {
 
     const jobs = [
-
         "Warehouse Team Leader",
-
         "Supply Chain Professional",
-
         "Inventory Specialist",
-
         "Data Analytics Enthusiast"
-
     ];
 
     let index = 0;
 
-    function changeTitle(){
+    setInterval(() => {
 
-        heroTitle.style.opacity = 0;
+        heroTitle.style.opacity = "0";
 
-        setTimeout(()=>{
+        setTimeout(() => {
 
             heroTitle.textContent = jobs[index];
 
-            heroTitle.style.opacity = 1;
+            heroTitle.style.opacity = "1";
 
-            index++;
+            index = (index + 1) % jobs.length;
 
-            if(index>=jobs.length){
+        }, 250);
 
-                index=0;
+    }, 3500);
 
-            }
-
-        },250);
-
-    }
-
-    setInterval(changeTitle,3500);
-
+}
+   
     /* ==========================================
        COUNTER
     ========================================== */

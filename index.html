@@ -32,6 +32,18 @@ crossorigin>
 rel="stylesheet">
 <link rel="stylesheet"
 href="style.css">
+<style>
+/* Override: hilangkan kotak putih di belakang logo perusahaan */
+.company-logo {
+background: transparent !important;
+box-shadow: none !important;
+}
+.company-logo img {
+background: transparent !important;
+mix-blend-mode: normal;
+object-fit: contain;
+}
+</style>
 </head>
 
 <body>
@@ -454,9 +466,7 @@ dalam aktivitas operasional warehouse sehari-hari.
 </div>
 <div class="skills-grid">
 <div class="skill-card">
-<div class="skill-icon">
-<img src="assets/icons/warehouse.svg" alt="Warehouse">
-</div>
+<div class="skill-icon">📦</div>
 <h3>Warehouse Operations</h3>
 <p>Inbound, Outbound, Putaway, Picking, Packing, Shipping.</p>
 </div>

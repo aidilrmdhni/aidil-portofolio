@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aidil-portofolio.vercel.app/sitemap.xml
